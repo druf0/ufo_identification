@@ -12,6 +12,7 @@ ui_page 'html/index.html'
 dependencies {
     'es_extended',
     'esx_identity',
+    'esx_license',
     'ox_lib'
 }
 
