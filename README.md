@@ -1,7 +1,7 @@
 # ufo_identification
 
-## An ESX Identification Card System
-## Do not sell, modify and upload it.
+ - An ESX Identification Card System
+ - Do not sell, modify and upload it.
 
 ## Features
  - Optimized 0.01ms usage while idle
