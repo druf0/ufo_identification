@@ -1,0 +1,136 @@
+@font-face {
+    font-family: BetterYesterday;
+    src: url("../html/assets/font/BetterYesterday.otf");
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#identity-card {
+    position: relative;
+    display: none;
+    margin: 230px 50px 0 0;
+    float: right;
+    width: 457px;
+    height: 272px;
+    padding: 54px 17px 10 144px;
+    background: url("./assets/images/idcard.png");
+    animation: popAnimation 0.3s linear 1;
+}
+
+.name-field {
+    position: absolute;
+    top: 60px;
+    left: 145px;
+}
+
+.name-field p {
+    margin: 13px 0;
+}
+
+#nationality {
+    position: absolute;
+    top: 135px;
+    left: 145px;
+}
+
+#dob {
+    position: absolute;
+    top: 167px;
+    left: 145px;
+}
+
+.male {
+    position: absolute;
+    width: 104px;
+    top: 52px;
+    left: 20px;
+    display: none;
+}
+
+.female {
+    position: absolute;
+    top: 63px;
+    left: 30px;
+    width: 95px;
+    display: none;
+}
+
+#gender {
+    position: absolute;
+    top: 135px;
+    left: 244px;
+    text-transform: capitalize;
+}
+
+#expires {
+    position: absolute;
+    top: 167px;
+    left: 244px;
+}
+
+#job {
+    position: absolute;
+    top: 105px;
+    left: 244px;
+    text-transform: capitalize;
+}
+
+#signature {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: BetterYesterday;
+    font-size: 48px;
+    color: white;
+}
+
+#licenses {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    width: 106.5px;
+    height: 165px;
+}
+
+.licenseType {
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#class {
+    position: absolute;
+    top: 135px;
+    left: 140px;
+}
+
+.classType {
+    margin-left: 5px;
+    float: left;
+}
+
+img {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+}
+
+@keyframes popAnimation {
+    25% {
+        transform: scale(1.14);
+    }
+}
