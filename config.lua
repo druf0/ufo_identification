@@ -2,6 +2,8 @@ Config = {}
 
 -- You can start modifying below this.
 
+Config.checkForUpdates = true -- Check for updates?
+
 Config.Locale = GetConvar('esx:locale', 'en') -- Currently available in english and spanish.
 
 Config.Distance = 5 -- Distance between players to show their documentation

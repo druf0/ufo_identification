@@ -75,7 +75,7 @@ $(document).ready(function(){
                 $('#expires').text("06/01/2027");
                 $('#job').hide();
 
-                $('#identity-card').css('background', 'url(assets/images/firearm.png)');
+                $('#identity-card').css('background', 'url(assets/images/weapon.png)');
                 }
                 $('#identity-card').show();
             } else if (e.data.action == 'close') {

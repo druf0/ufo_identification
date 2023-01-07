@@ -7,6 +7,8 @@ lua54 'yes'
 description 'Identification for ESX servers'
 author 'druf0'
 
+version '1.0.0'
+
 ui_page 'html/index.html'
 
 dependencies {
