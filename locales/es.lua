@@ -4,9 +4,9 @@ Locales['es'] = {
     ['female'] = 'Femenino',
     -- Notificaciones
     ['showPlayerTitle'] = 'Menú de Identificación',
-    ['showIdDesc'] = 'Estás mirando tu documentación de identidad',
-    ['driverLicenseDesc'] = 'Estás mirando tu licencia de conducir',
-    ['weaponLicenseDesc'] = 'Estás mirando tu licencia de armas',
+    ['showIdDesc'] = 'Estás mirando una documentación de identidad',
+    ['driverLicenseDesc'] = 'Estás mirando una licencia de conducir',
+    ['weaponLicenseDesc'] = 'Estás mirando una licencia de armas',
     ['showPlayerDesc'] = 'Le estás mostrando tu documentación a alguien',
     ['showPlayerErrorDesc'] = 'No hay nadie cerca a ti para mostrar tu documentación',
     ['noLicense'] = 'No tienes ese tipo de licencia',

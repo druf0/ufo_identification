@@ -26,7 +26,10 @@ Also you need to put all the dependencies before this resource in server.cfg
  - The resource needs to be after all the required dependencies (otherwise it won't work)
 
 ## Preview
-coming soon
+<img src="https://imgur.com/cl6G8lq">
+<img src="https://imgur.com/Xu9bRhR">
+<img src="https://imgur.com/2VUIYQk">
+<img src="https://imgur.com/xFAbc17">
 
 # Support
 <a href="https://discord.gg/6F7qvKX6Qc">Discord Server</a>

@@ -26,12 +26,12 @@ if Config.checkVersion then
             if currentVersion ~= repoVersion then
                 Wait(4000)
                 print("^0[^3WARNING^0] "..resourceName.." is ^1NOT ^0up to date!")
-                print("^0[^3WARNING^0] Your Version: ^1"..curVersion.."^0")
-                print("^0[^3WARNING^0] Latest Version: ^2"..repoVersion.."^0")
-                print("^0[^3WARNING^0] Get the latest Version from: ^2"..repoURL.."^0")
+                print("^0[^3WARNING^0] Your version is: ^1"..curVersion.."^0")
+                print("^0[^3WARNING^0] Latest version is: ^2"..repoVersion.."^0")
+                print("^0[^3WARNING^0] Get the latest version from: ^2"..repoURL.."^0")
             else
                 Wait(4000)
-                print("^0[^2INFO^0] "..resourceName.." is up to date! (^2"..curVersion.."^0)")
+                print("^0[^2INFO^0] "..resourceName.." is up to date! (^2"..currentVersion.."^0)")
             end
         end)
     end
@@ -39,7 +39,7 @@ if Config.checkVersion then
     function GetRepoInformations()
         local repoVersion, repoURL, repoBody = nil, nil, nil
 
-        PerformHttpRequest("https://api.github.com/repos/wasabirobby/wasabi_backpack/releases/latest", function(err, response, headers)
+        PerformHttpRequest("https://api.github.com/repos/druf0/ufo_identification/releases/latest", function(err, response, headers)
             if err == 200 then
                 local data = json.decode(response)
 
@@ -48,7 +48,7 @@ if Config.checkVersion then
                 repoBody = data.body
             else
                 repoVersion = curVersion
-                repoURL = "https://github.com/wasabirobby/wasabi_backpack"
+                repoURL = "https://github.com/druf0/ufo_identification"
             end
         end, "GET")
 

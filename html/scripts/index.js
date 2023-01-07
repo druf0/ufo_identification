@@ -64,14 +64,18 @@ $(document).ready(function(){
             }
             } else if (licenseType == 'weapon') {
                 $('img').hide();
-                $('#lastname').css('color', '#d9d9d9');
+                $('#lastname').css('color', '#c7c7c7');
                 $('#lastname').text(userInfo.lastname);
-                $('#firstname').css('color', '#d9d9d9');
+                $('#firstname').css('color', '#c7c7c7');
                 $('#firstname').text(userInfo.firstname);
+                $('#dob').css('color', '#c7c7c7');
                 $('#dob').text(userInfo.dateofbirth);
-                $('#signature').text(userInfo.firstname + " " + userInfo.lastname);
+                $('#signature').hide();
+                $('#expires').css('color', '#c7c7c7');
+                $('#expires').text("06/01/2027");
+                $('#job').hide();
 
-                $('#identity-card').css('background', 'url(assets/images/weapon.png)');
+                $('#identity-card').css('background', 'url(assets/images/firearm.png)');
                 }
                 $('#identity-card').show();
             } else if (e.data.action == 'close') {

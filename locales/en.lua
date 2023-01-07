@@ -4,9 +4,9 @@ Locales['en'] = {
     ['female'] = 'Female',
     -- Notifications
     ['showPlayerTitle'] = 'Identification Menu',
-    ['showIdDesc'] = 'You are looking at your own identification document',
-    ['driverLicenseDesc'] = 'You are looking at your driver\'s license',
-    ['weaponLicenseDesc'] = 'You are looking at your weapon\'s license',
+    ['showIdDesc'] = 'You are looking at a identification document',
+    ['driverLicenseDesc'] = 'You are looking at a driver\'s license',
+    ['weaponLicenseDesc'] = 'You are looking at a weapon\'s license',
     ['showDriverLicenseDesc'] = 'You\'re showing your driver\'s license to someone else',
     ['showPlayerDesc'] = 'You\'re showing your documentation to someone else',
     ['showPlayerErrorDesc'] = 'There is no one near to show your documentation',
