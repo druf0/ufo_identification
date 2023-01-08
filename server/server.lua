@@ -1,4 +1,3 @@
--- Open ID card
 RegisterServerEvent('ufo_identification:open')
 AddEventHandler('ufo_identification:open', function(ID, targetID, type)
 	local identifier = ESX.GetPlayerFromId(ID).identifier
@@ -11,9 +10,6 @@ AddEventHandler('ufo_identification:open', function(ID, targetID, type)
 			MySQL.query('SELECT type FROM user_licenses WHERE owner = @identifier', {['@identifier'] = identifier},
 			function (licenses)
 				if type ~= nil then
-					if type == 'driver' and Config.Notifications then
-						TriggerClientEvent('ufo_identification:notification', _source, TranslateCap('LicensesMenu'), TranslateCap('driverLicenseDesc'), "success")
-					end
 					for i=1, #licenses, 1 do
 						if type == 'driver' then
 							if licenses[i].type == 'drive' or licenses[i].type == 'drive_bike' or licenses[i].type == 'drive_truck' then
@@ -26,14 +22,6 @@ AddEventHandler('ufo_identification:open', function(ID, targetID, type)
 								end
 								show = true
 							end
-						end
-					end
-					if type == 'driver' then
-						if Config.Notifications then
-						end
-					elseif type == 'weapon' then
-						if Config.Notifications then
-						
 						end
 					end
 				else
