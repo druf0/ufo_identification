@@ -5,7 +5,7 @@
 local currentVersion = GetResourceMetadata(GetCurrentResourceName(), "version")
 local resourceName = "ufo_identification"
 
-if Config.checkForUpdates then
+if Config.Update then
     CreateThread(function()
         if GetCurrentResourceName() ~= "ufo_identification" then
             resourceName = "ufo_identification (" .. GetCurrentResourceName() .. ")"
@@ -25,15 +25,7 @@ if Config.checkForUpdates then
         CreateThread(function()
             if currentVersion ~= repoVersion then
                 Wait(4000)
-                print("^0[^3WARNING^0] " .. resourceName .. " is ^1NOT ^0up to date!")
-                print("^0[^3WARNING^0] Your Version: ^2" .. currentVersion .. "^0")
-                print("^0[^3WARNING^0] Latest Version: ^2" .. repoVersion .. "^0")
-                print("^0[^3WARNING^0] Get the latest Version from: ^2" .. repoURL .. "^0")
-                print("^0[^3WARNING^0] Changelog:^0")
-                print("^1" .. repoBody .. "^0")
-            else
-                Wait(4000)
-                print("^0[^2INFO^0] " .. resourceName .. " is up to date! (^2" .. currentVersion .. "^0)")
+                print("^0[^3WARNING^0] " .. resourceName .. " is ^1outdated^0, get the latest version from ^2".. repoURL .. "^0")
             end
         end)
     end
