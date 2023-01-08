@@ -31,6 +31,7 @@ $(document).ready(function(){
                 $('#signature').text(userInfo.firstname + " " + userInfo.lastname);
                 $('#nationality').text(nationality);
                 $('#expires').text("02/09/2031");
+                $('#class').text('');
 
                 if (licenseType == 'driver') {
                     if (licenseData != null) {
@@ -38,12 +39,15 @@ $(document).ready(function(){
                             var licenseType = licenseData[key].type;
 
                             if (licenseType == 'drive_bike') {
+                                $('#nationality').text('');
                                 licenseType = 'motorcyclist';
                                 classType = 'C';
                             } else if (licenseType == 'drive_truck') {
+                                $('#nationality').text('');
                                 licenseType = 'trucker';
                                 classType = 'A';
                             } else if (licenseType == 'drive') {
+                                $('#nationality').text('');
                                 licenseType = 'driver';
                                 classType = 'B';
                             }
@@ -51,8 +55,9 @@ $(document).ready(function(){
                             if (licenseType == 'motorcyclist' || licenseType == 'trucker' || licenseType == 'driver') {
                                 $('img').hide();
                                 $('#licenses').append('<p class="licenseType">'+licenseType+'</p>');
-                                $('#nationality').hide();
                                 $('#class').append('<p class="classType">'+classType+'</p>');
+                                $('#gender').text("");
+                                $('#job').text("");
                             }
                         });
                     }
@@ -64,17 +69,12 @@ $(document).ready(function(){
             }
             } else if (licenseType == 'weapon') {
                 $('img').hide();
-                $('#lastname').css('color', '#c7c7c7');
                 $('#lastname').text(userInfo.lastname);
-                $('#firstname').css('color', '#c7c7c7');
                 $('#firstname').text(userInfo.firstname);
-                $('#dob').css('color', '#c7c7c7');
                 $('#dob').text(userInfo.dateofbirth);
-                $('#signature').hide();
-                $('#expires').css('color', '#c7c7c7');
                 $('#expires').text("06/01/2027");
-                $('#job').hide();
-
+                $('#job').text("");
+                $('#class').text("");
                 $('#identity-card').css('background', 'url(assets/images/weapon.png)');
                 }
                 $('#identity-card').show();
